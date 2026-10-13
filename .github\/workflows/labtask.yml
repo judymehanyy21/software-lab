@@ -1,18 +1,20 @@
-name: simple demo ci/cd
+name: Simple Demo CI/CD
+
 on:
   push:
     branches:
-       - main
+      - main
+
 jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
       - name: Welcome
-        run:  echo "Hello world"
+        run: echo "Hello world"
+
   job2:
     needs: job1
     runs-on: ubuntu-latest
     steps:
       - name: Welcome
-        run: echo "welcome to lab 3 - updated"
-      
+        run: echo "Welcome to lab 3"
