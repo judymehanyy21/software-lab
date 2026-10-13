@@ -1,5 +1,4 @@
 name: simple demo ci/cd
-
 on:
   push:
     branches:
@@ -8,12 +7,12 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: welcome
+      - name: Welcome
         run:  echo "Hello world"
   job2:
     needs: job1
     runs-on: ubuntu-latest
     steps:
-      - name: welcome
+      - name: Welcome
         run: echo "welcome to lab 3"
       
