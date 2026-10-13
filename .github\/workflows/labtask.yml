@@ -10,3 +10,10 @@ jobs:
     steps:
       - name: welcome
         run:  echo "Hello world"
+  job 2:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: welcome
+        run: echo "welcome to lab 3"
+      
