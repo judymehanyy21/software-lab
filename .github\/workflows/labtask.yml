@@ -14,5 +14,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Welcome
-        run: echo "welcome to lab 3"
+        run: echo "welcome to lab 3 - updated"
       
